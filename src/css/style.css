@@ -56,19 +56,20 @@ section {
     flex-direction: column;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 30vw;
+    padding: 0 20vw;
+    border: 1px dashed black;
 }
 
 main {
     background-color: blanchedalmond;
     border-radius: 10px;
     padding: 1em 2em 4em 2em;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 footer {
     margin-top: auto;
-    padding: 3em 0;
+    padding: 2em 0;
 }
 
 footer p {

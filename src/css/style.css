@@ -8,7 +8,7 @@ h1, h2, h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p, td, th {
+p, td, th, input {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -35,6 +35,15 @@ thead tr {
 
 tbody tr:nth-of-type(odd) {
     background-color: rgb(240, 220, 192);
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;   
+}
+
+section {
+    padding: 1em 0em;
 }
 
 .wrapper {

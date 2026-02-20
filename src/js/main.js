@@ -3,6 +3,7 @@ let allCourses = [];
 document.addEventListener("DOMContentLoaded", async () => {
     await getCourses();  
     document.querySelector("#search").addEventListener("input", filterCourses);
+    document.querySelector("#sort").addEventListener("change", sortCourses);
 });
 
 function filterCourses(input) {
@@ -15,6 +16,18 @@ function filterCourses(input) {
     );
 
     displayData(filtered);
+}
+
+function sortCourses(input) {
+    const sortBy = input.target.value;
+
+    /*Använder localeCompare istället för till exempel en "ternary operator"
+    för att sorteringen ska fungera korrekt med svenska bokstäver*/
+    const sorted = [...allCourses].sort((a, b) => {
+        return a[sortBy].localeCompare(b[sortBy]);
+    });
+
+    displayData(sorted);
 }
 
 async function getCourses() {

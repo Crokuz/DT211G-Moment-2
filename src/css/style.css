@@ -8,7 +8,7 @@ h1, h2, h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p, td, th, input {
+p, td, th, input, select {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -40,6 +40,11 @@ tbody tr:nth-of-type(odd) {
 label {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;   
+    padding-left: 1em;
+}
+
+label:first-of-type {
+    padding-left: 0em;
 }
 
 section {

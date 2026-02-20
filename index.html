@@ -2,7 +2,6 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>moment-2</title>
     <link rel="stylesheet" href="src/css/style.css">
@@ -19,6 +18,13 @@
             <section>
                 <label for="search">Sök:</label>
                 <input type="text" id="search" placeholder="Sök...">
+
+                <label for="sort">Sortera:</label>
+                <select id="sort" name="sort">
+                    <option value="code">Kurskod</option>
+                    <option value="coursename">Namn</option>
+                    <option value="progression">Progression</option>
+                </select> 
             </section>
 
             <table id="courses">

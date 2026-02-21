@@ -1,15 +1,40 @@
 body {
     margin: 0; 
     padding: 0;
-    background-color: ghostwhite;
+    background-color: DarkCyan ;
+}
+
+header{
+    border: 2px solid;
+    border-color: white black gainsboro white;
+    background-color: gainsboro;
+    margin-top: 5vh;
 }
 
 h1, h2, h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    font-size: medium;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
 p, td, th, input, select {
     font-family: 'Courier New', Courier, monospace;
+}
+
+input, select {
+    border-radius: 0;
+    border: 2px solid;
+    border-color: white black black white;
+    background-color: rgb(241, 241, 241);
+    padding: 3px;
 }
 
 th {
@@ -18,6 +43,10 @@ th {
 
 td {
     padding: 0.3em 2em 0.3em 0;
+}
+
+th:last-of-type, td:last-of-type {
+    padding-right: 0;
 }
 
 tr {
@@ -34,7 +63,7 @@ thead tr {
 }
 
 tbody tr:nth-of-type(odd) {
-    background-color: rgb(240, 220, 192);
+    background-color: rgb(210, 210, 210) ;
 }
 
 label {
@@ -56,15 +85,26 @@ section {
     flex-direction: column;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 20vw;
-    border: 1px dashed black;
+    padding: 0 30vw;
+}
+
+#headerFrame {
+    background-image: linear-gradient(to right, blue , dodgerBlue);
+    padding: 0.2em 0.5em;
+    border: 2px solid gainsboro;
 }
 
 main {
-    background-color: blanchedalmond;
-    border-radius: 10px;
+    background-color: gainsboro;
+    border: 2px solid;
+    border-color: gainsboro black black white;
     padding: 1em 2em 4em 2em;
     min-height: 50vh;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
@@ -74,6 +114,7 @@ footer {
 
 footer p {
     text-align: center;
+    color: white;
 }
 
 @media (max-width: 1440px) {
@@ -84,6 +125,10 @@ footer p {
 
 @media (max-width: 900px) {
     .wrapper {
-        padding: 0 3vw;
+        padding: 0 10px;
+    }
+
+    header {
+        margin-top: 10px;
     }
 }
